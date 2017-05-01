@@ -5,6 +5,7 @@ volumes:
 
 services:
   abdalla:
+    build: .
     container_name: nodjs-test
     image: abdalla/nodejs
     volumes:
