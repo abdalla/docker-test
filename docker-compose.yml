@@ -1,0 +1,15 @@
+version: '3'
+volumes:
+    database_data:
+        driver: local
+
+services:
+  abdalla:
+    container_name: nodjs-test
+    image: abdalla/nodejs
+    volumes:
+      - .:/src
+    tty: true
+    ports:
+      - "3000:3000"
+    command: [npm, start]

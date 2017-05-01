@@ -1,0 +1,1 @@
+docker run -v /$(pwd):/src abdalla/nodejs npm start
